@@ -1,0 +1,5 @@
+C:\substance_test\lows\my_asset_low.fbx C:\substance_test\highs\my_asset_high.fbx
+
+C:\substance_test\sources\source_mesh_001_low.fbx C:\substance_test\sources\source_mesh_001_high.fbx
+
+C:\substance_test\sources\source_mesh_002_low.fbx C:\substance_test\sources\source_mesh_002_high.fbx
