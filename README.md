@@ -12,7 +12,12 @@ _Note: This repository demonstrates **only** the following concepts:_
 *  *  *  *  *
 *  *  *  *  *
 ## Command Line Tools
-Using the **Command Line** (to be added...)
+### On Windows 10
+To use the ...
+
+*  *  *  *  *
+### On Mac OS X Catalina
+Examples currently unavailable, but can be kickstarted using the Windows 10 examples and the Substance Automation Toolkit documentation.
 
 *  *  *  *  *
 *  *  *  *  *
@@ -48,7 +53,7 @@ pip install "C:\Program Files\Allegorithmic\Substance Automation Toolkit\Python 
 ##### b) Running the batch file
 *  *  *  *  *
 ### On Mac OS X Catalina
-Currently unavailable, Coming soon.
+Examples currently unavailable, but can be kickstarted using the Windows 10 examples and the Substance Automation Toolkit documentation.
 *  *  *  *  *
 ## Useful Resources
 - [Substance Automation Toolkit Home](https://docs.substance3d.com/sat)
