@@ -6,8 +6,8 @@ The provided examples are split into two categories:
 - using the [Python API](https://docs.substance3d.com/sat/pysbs-python-api).
 
 
-_Note: This repository demonstrates **only** the following concepts:_
-- _Headless AO and Normal Map texture baking from a list of [low_poly, high poly] pairs, with outputting the results in a predefined location_
+_Note: This repository demonstrates **only** the following concepts: (code can be easily modified to achieve most other available options)_
+- _Headless Normal Map texture baking from a list of [low_poly, high poly] pairs, with outputting the results in a predefined location_
 *  *  *  *  *
 *  *  *  *  *
 *  *  *  *  *
