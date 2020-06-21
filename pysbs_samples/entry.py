@@ -4,8 +4,6 @@ import user_settings
 import logging
 import config_bakes
 
-cl = logging.CustomLogger()
-
 
 def batch_bake(
         substance_automation_toolkit_path,
@@ -94,20 +92,22 @@ def bake_bentnormal(low_poly_input_path,
     :param udim: (str) The udim to process
     """
     cl.log("--- --- Baking: Bent Normal started.")
-    """
     output_name = '%s_%s' % (baker_name, udim)
-    pysbs.batchtools.sbsbaker_curvature(lowpoly_input,
+    pysbs.batchtools.sbsbaker_curvature(low_poly_input_path,
                                         output_size=[output_size, output_size],
                                         output_format=output_format,
                                         output_path=output_path,
                                         udim=udim,
                                         output_name=output_name).wait()
-    """
     cl.log("--- --- Baking: Bent Normal successfully completed.")
 
 
 # Instantiate the user settings
 current_user_settings = user_settings.UserSetting()
+
+# Instantiate the custom logger
+cl = logging.CustomLogger()
+
 # SAMPLE: Trigger a bake for BENT_NORMAL
 batch_bake(
     substance_automation_toolkit_path=current_user_settings.substance_automation_toolkit_path,
