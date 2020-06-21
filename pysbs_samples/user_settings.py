@@ -9,7 +9,9 @@ with open(USER_SETTINGS_FILE) as user_settings:
 
 
 class UserSetting(object):
-    # Establishing the project constants based on the user configured files
+    """
+    Establishing the project constants based on the user configured files.
+    """
     def __init__(self):
         self.substance_automation_toolkit_path = user_settings_dictionary["substance_automation_toolkit_path"]
         self.output_path = user_settings_dictionary["output_path"]

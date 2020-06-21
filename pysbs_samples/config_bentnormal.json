@@ -1,9 +1,9 @@
 {
-  "output_name_flag": "",
-  "output_size": "",
-  "antialiasing": "",
-  "ignore_backface": "",
-  "self_occlusion": "",
-  "use_lowdef_as_highdef": "",
-  "uv_set": ""
+  "output_name_flag": "_BentNormal",
+  "output_size": 12,
+  "antialiasing": 0,
+  "ignore_backface": true,
+  "self_occlusion": 0,
+  "use_lowdef_as_highdef": false,
+  "uv_set": 0
 }
