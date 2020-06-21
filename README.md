@@ -7,7 +7,7 @@ The provided examples are split into two categories:
 
 
 _Note: This repository demonstrates **only** the following concepts: (code can be easily modified to achieve most other available options)_
-- _Headless Normal Map texture baking from a list of [low_poly, high poly] pairs, with outputting the results in a predefined location_
+- _Headless Bent-Normal Map texture baking from a list of [low_poly, high poly] pairs, with outputting the results in a predefined location_
 *  *  *  *  *
 *  *  *  *  *
 *  *  *  *  *
