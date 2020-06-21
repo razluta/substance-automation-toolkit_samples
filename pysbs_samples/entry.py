@@ -1,7 +1,10 @@
 import os
 import pysbs
 import user_settings
+import logging
 import config_bakes
+
+cl = logging.CustomLogger()
 
 
 def batch_bake(
@@ -45,14 +48,16 @@ def batch_bake(
         expected_highpoly_path = os.path.join(high_poly_meshes_directory_path, expected_highpoly_asset_name)
         if os.path.exists(expected_highpoly_path):
             low_to_high_match_dictionary[lowpoly_asset] = expected_highpoly_asset_name
+        else:
+            low_to_high_match_dictionary[lowpoly_asset] = lowpoly_asset
 
     # For each match, run the bake request
     for low_poly_name, high_poly_name in low_to_high_match_dictionary.items():
         low_poly_input_path = os.path.join(low_poly_meshes_directory_path, low_poly_name)
         high_poly_input_path = os.path.join(high_poly_meshes_directory_path, high_poly_name)
-        print "For the following pairing: "
-        print "--- low poly mesh: " + low_poly_input_path
-        print "--- high poly mesh: " + high_poly_input_path
+        cl.log("For the following pairing: ")
+        cl.log("--- low poly mesh: " + low_poly_input_path)
+        cl.log("--- high poly mesh: " + high_poly_input_path)
 
         # For each type of provided bake, run a bake if it matches the rules
         for bake_type in bake_types_list:
@@ -69,7 +74,7 @@ def batch_bake(
                     udim=""
                 )
 
-    print "Batch baking successfully completed."
+    cl.log("Batch baking successfully completed.")
 
 
 def bake_bentnormal(low_poly_input_path,
@@ -88,7 +93,7 @@ def bake_bentnormal(low_poly_input_path,
     :param baker_name: (str) Name of the baker
     :param udim: (str) The udim to process
     """
-    print "--- --- Baking: Bent Normal started."
+    cl.log("--- --- Baking: Bent Normal started.")
     """
     output_name = '%s_%s' % (baker_name, udim)
     pysbs.batchtools.sbsbaker_curvature(lowpoly_input,
@@ -98,7 +103,7 @@ def bake_bentnormal(low_poly_input_path,
                                         udim=udim,
                                         output_name=output_name).wait()
     """
-    print "--- --- Baking: Bent Normal successfully completed."
+    cl.log("--- --- Baking: Bent Normal successfully completed.")
 
 
 # Instantiate the user settings
