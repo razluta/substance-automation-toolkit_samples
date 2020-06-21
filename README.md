@@ -1,4 +1,4 @@
-# **Substance Automation Toolkit - Samples**
+# **Substance Automation Toolkit - Samples** [![License](https://img.shields.io/badge/License-MIT-lightgrey.svg?style=flat)](http://mit-license.org)
 This repository contains a few samples for using the [Substance Automation Toolkit](https://docs.substance3d.com/sat) and providing a framework of examples for introducing automation in a content development pipeline. 
 
 The provided examples are split into two categories: 
