@@ -1,6 +1,10 @@
 {
   "substance_automation_toolkit_path": "C:\\Program Files\\Allegorithmic\\Substance Automation Toolkit",
   "output_path": "C:\\substance_test\\output_folder\\",
-  "lows_path": "",
-  "highs_path": ""
+  "lows_path": "C:\\substance_test\\lows",
+  "highs_path": "C:\\substance_test\\highs",
+  "input_format": "fbx",
+  "output_format": "png",
+  "low_poly_nameflag": "low",
+  "high_poly_nameflag": "high"
 }
