@@ -1,7 +1,7 @@
 import os
 import pysbs
 import user_settings
-import logging
+import custom_logger
 import config_bakes
 
 
@@ -106,7 +106,7 @@ def bake_bentnormal(low_poly_input_path,
 current_user_settings = user_settings.UserSetting()
 
 # Instantiate the custom logger
-cl = logging.CustomLogger()
+cl = custom_logger.CustomLogger()
 
 # SAMPLE: Trigger a bake for BENT_NORMAL
 batch_bake(
