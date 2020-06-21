@@ -13,6 +13,7 @@ _Note: This repository demonstrates **only** the following concepts: (code can b
 *  *  *  *  *
 ## Command Line Tools
 ### On Windows 10
+_(Create all output folders before running the .bat file)_
 To use the ...
 
 *  *  *  *  *
